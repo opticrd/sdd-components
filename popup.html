@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pop up</title>
+    <link rel="stylesheet" href="./buttons.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/gh/opticrd/official-header/main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/vs.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="./popup.js" defer></script>
+  </head>
+  <body>
+    <h2>Base (& pop-ups)</h2>
+    <button class="btn btn-blue" onclick="openSimple()">Simple</button> <br />
+    <button class="btn btn-green" onclick="openLogo()">With logo</button> <br />
+    <button class="btn btn-red" onclick="openIcon()">With icon</button> <br />
+    <div style="background-color: #003670; padding: 10px 0px">
+      <button class="btn btn-white">Boton 4</button>
+    </div>
+    <button class="btn btn-black">Boton 5</button>
+    <br />
+    <h2>Outline</h2>
+    <button class="btn btn-outline-blue">Boton 1</button> <br />
+    <button class="btn btn-outline-green">Boton 2</button> <br />
+    <button class="btn btn-outline-red">Boton 3</button> <br />
+    <button class="btn btn-outline-black">Boton 5</button>
+    <h2>Icons</h2>
+    <button class="btn btn-blue"><i class="ri-user-3-line"></i> User</button>
+    <br />
+    <button class="btn btn-green">Messages <i class="ri-mail-line"></i></button>
+    <br />
+    <button class="btn btn-outline-red">
+      <i class="ri-delete-bin-7-line"></i>Remove
+    </button>
+
+    <h2>Enlace</h2>
+    <a href="" class="btn btn-link">Boton de enlace</a>
+
+    <div class="pop-up_container" id="pop-up-1">
+      <div class="pop-up">
+        <div class="pop-up_title">
+          <h1>Pop up</h1>
+          <button><i class="ri-close-line"></i></button>
+        </div>
+        <div class="pop-up_content">
+          <h2 class="title-md">COLOCAR NOMBRE</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam
+          </p>
+          <button class="btn btn-blue">ACEPTAR Y CONTINUAR</button>
+        </div>
+        <div class="pop-up_footer">
+          <a href="#" class="btn-link">Volver atras</a>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="pop-up_container" id="pop-up-2">
+      <div class="pop-up">
+        <div class="pop-up_content">
+          <img class="pop-up_logo" src="./logo02.png" alt="" />
+          <p>Aquí se coloca el nombre o acción de la ventana.</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="pop-up_container" id="pop-up-3">
+      <div class="pop-up">
+        <div class="pop-up_title">
+          <h1>NOMBRE</h1>
+          <button><i class="ri-close-line"></i></button>
+        </div>
+        <div class="pop-up_content">
+          <i class="pop-up_icon ri-checkbox-circle-line text-green"></i>
+          <h2 class="title-md">
+            Aquí se coloca el nombre o acción de la Ventana
+          </h2>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <script>
+    openSimple = () => {
+      document.getElementById("pop-up-1").classList.add("active");
+    };
+
+    openLogo = () => {
+      document.getElementById("pop-up-2").classList.add("active");
+    };
+
+    openIcon = () => {
+      document.getElementById("pop-up-3").classList.add("active");
+    };
+  </script>
+</html>

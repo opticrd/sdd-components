@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Botones</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/gh/opticrd/official-header/main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/vs.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./main.js" defer></script>
+    <script src="./popup.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="topbar">
+        <div class="container">
+          <div class="topbar-cont">
+            <a href="./index.html" class="logo"
+              ><div class="logo-icon">
+                <img src="/images/gob-icon.svg" alt="" />
+              </div>
+              <span class="logo-text">Sistema de<br /><span>Diseño Dominicano</span></span
+              ></a
+            >
+            <div class="topbar-right">
+              <div class="lang-select dropdown-simple">
+                <a href="#"
+                  ><img src="https://flagcdn.com/do.svg" alt="" /><span>ES</span
+                  ><i class="ri-arrow-down-s-line"></i
+                ></a>
+                <div class="dropdown-list">
+                  <a href="#"
+                    ><img src="https://flagcdn.com/do.svg" alt="" /><span
+                      >ES</span
+                    ></a
+                  >
+                  <a href="./en/"
+                    ><img src="https://flagcdn.com/us.svg" alt="" /><span
+                      >EN</span
+                    ></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-menu">
+        <div class="container">
+          <div class="main-menu-cont">
+            <span class="menu-toggle"><i class="ri-menu-line"></i></span>
+            <div class="menu">
+              <a href="./index.html" class="menu-item">INICIO</a>
+              <a href="./banners.html" class="menu-item">BANNERS</a>
+              <a href="./alerts.html" class="menu-item">ALERTS</a>
+              <a href="./atoms.html" class="menu-item">ATOMS</a>
+              <a href="./headers.html" class="menu-item">HEADERS</a>
+              <a href="./footers.html" class="menu-item">FOOTERS</a>
+              <a href="./cards.html" class="menu-item">CARDS(HOVER)</a>
+              <a href="./gallery-components.html" class="menu-item">GALLERY COMPONENTS(ANIMATIONS)</a>
+              <a href="./text-inputs-outputs.html" class="menu-item">TEXT INPUTS AND OUTPUTS</a>
+              <a href="./selectors.html" class="menu-item">SELECTORS</a>
+
+
+            </div>
+            <form class="search-bar">
+              <label class="search-bar-toggle" for="searchMain"
+                ><i class="ri-search-line"></i
+              ></label>
+              <input
+                id="searchMain"
+                type="search"
+                placeholder="¿Qué quieres buscar?"
+              />
+              <button type="submit">
+                <i class="ri-search-line"></i><span>Buscar</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <h1>Componente Galería(Animados)</h1>
+        <h2>Sin imagen</h2>
+        <div class="container">
+            <div class="values-slider col-lg-7" style="position: relative;">
+                <div class="d-flex slid">
+                    <div class="slider active">
+                        <div class="slide-icon">
+                            <i class="ri-checkbox-blank-circle-line"></i>
+                        </div>
+                        <div class="slide-title">Opción 1</div>
+                        <div class="slide-text">Descripción de la cápsula seleccionada.</div>
+                    </div>
+                    <div class="slider">
+                        <div class="slide-icon">
+                            <i class="ri-checkbox-blank-circle-line"></i>
+                        </div>
+                        <div class="slide-title">Opción 2</div>
+                        <div class="slide-text">Descripción de la cápsula seleccionada.</div>
+                    </div>
+                    <div class="slider">
+                        <div class="slide-icon">
+                            <i class="ri-checkbox-blank-circle-line"></i>
+                        </div>
+                        <div class="slide-title">Opción 3</div>
+                        <div class="slide-text">Descripción de la cápsula seleccionada.</div>
+                    </div>
+                </div>
+                <div class="slider-control">
+                    <span class="active"></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <h2>Foto de usuario</h2>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="quote-box">
+                                <div class="d-flex flex-row">
+                                    <img class="quote-img" src="https://picsum.photos/100/100" alt="">
+                                    <div class="quote-header">
+                                        <h3 class="quote-title">Nombre y Apellido</h3>
+                                        <h6 class="quote-subtitle">Posición o diciplina de la persona</h6>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row quote-body">
+                                    <img class="quotes" alt="">
+                                    <p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="quote-box">
+                                <div class="d-flex flex-row">
+                                    <img class="quote-img" src="https://picsum.photos/100/100" alt="">
+                                    <div class="quote-header">
+                                        <h3 class="quote-title">Nombre y Apellido</h3>
+                                        <h6 class="quote-subtitle">Posición o diciplina de la persona</h6>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row quote-body">
+                                    <img class="quotes" alt="">
+                                    <p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="quote-box">
+                                <div class="d-flex flex-row">
+                                    <img class="quote-img" src="https://picsum.photos/100/100" alt="">
+                                    <div class="quote-header">
+                                        <h3 class="quote-title">Nombre y Apellido</h3>
+                                        <h6 class="quote-subtitle">Posición o diciplina de la persona</h6>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row quote-body">
+                                    <img class="quotes" alt="">
+                                    <p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2>Foto de usuario 2</h2>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div id="carouselExample2" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExample2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExample2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExample2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="card quote mb-3" style="color:black">
+                                <div class="row g-0">
+                                  <div class="col-md-4">
+                                    <img src="https://picsum.photos/300/400" class="img-fluid" alt="...">
+                                  </div>
+                                  <div class="col-md-8 mt-5">
+                                    <div class="card-body">
+                                        <div class="d-flex flex-row ">
+                                            <img class="quotes" alt="">
+                                            <p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                                        </div>
+                                        <br>
+                                        <h3 class="quote-title">Nombre y Apellido</h3>
+                                        <h6 class="quote-subtitle">Posición o diciplina de la persona</h6>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="card quote mb-3" style="color:black">
+                                <div class="row g-0">
+                                  <div class="col-md-4">
+                                    <img src="https://picsum.photos/300/400" class="img-fluid" alt="...">
+                                  </div>
+                                  <div class="col-md-8 mt-5">
+                                    <div class="card-body">
+                                        <div class="d-flex flex-row ">
+                                            <img class="quotes" alt="">
+                                            <p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                                        </div>
+                                        <br>
+                                        <h3 class="quote-title">Nombre y Apellido</h3>
+                                        <h6 class="quote-subtitle">Posición o diciplina de la persona</h6>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="card quote mb-3" style="color:black">
+                                <div class="row g-0">
+                                  <div class="col-md-4">
+                                    <img src="https://picsum.photos/300/400" class="img-fluid" alt="...">
+                                  </div>
+                                  <div class="col-md-8 mt-5">
+                                    <div class="card-body">
+                                        <div class="d-flex flex-row ">
+                                            <img class="quotes" alt="">
+                                            <p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                                        </div>
+                                        <br>
+                                        <h3 class="quote-title">Nombre y Apellido</h3>
+                                        <h6 class="quote-subtitle">Posición o diciplina de la persona</h6>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <h1>Solo Elementos Galería</h1>
+        <h2>Sin imagen</h2>
+        <h2>Foto de usuario</h2>
+        <h2>Foto de usuario 2</h2> -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+  <script>
+    openSimple = () => {
+      document.getElementById("pop-up-1").classList.add("active");
+    };
+
+    openLogo = () => {
+      document.getElementById("pop-up-2").classList.add("active");
+    };
+
+    openIcon = () => {
+      document.getElementById("pop-up-3").classList.add("active");
+    };
+  </script>
+</html>
