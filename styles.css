@@ -118,7 +118,18 @@ body {
   align-items: center;
   gap: 4px;
 }
-
+.btn-grande {
+  padding: 18px;
+  border-radius: 50px;
+  font-weight: 600;
+  border: none;
+  margin: 4px;
+  cursor: pointer;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
 .btn:hover {
   filter: brightness(90%);
 }
