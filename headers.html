@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Headers</title>
-    <link rel="stylesheet" href="./main.css" />
-    <link rel="stylesheet" href="./styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <script src="https://cdn.jsdelivr.net/gh/opticrd/official-header/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/gh/opticrd/official-header/main.js" defer theme="dark"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/vs.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./header.css" />
   </head>
   <body>
     <header>
@@ -86,13 +87,427 @@
         </div>
       </div>
     </header>
-    <br /><br />
-    <iframe
-      src="https://ssd-test-headers.web.app/"
-      width="100%"
-      style="height: 100vh"
-      frameborder="0"
-    ></iframe>
+    <br />
+    <br />
+    <h1>Header Light</h1>
+    <br />
+    <br />
+    <official-header></official-header>
+    <header class="header-light">
+      <div class="topbar">
+          <div class="container">
+              <div class="topbar-cont">
+                  <a href="./index.html" class="logo">
+                      <div class="logo-icon">
+                          <img src="./img/page-logo.svg" alt="" />
+                      </div>
+                  </a>
+                  <div class="topbar-right">
+                      <form class="search-bar">
+                          <label class="search-bar-toggle" for="searchMain"><i class="ri-search-line"></i></label>
+                          <input id="searchMain" type="search" placeholder="¿Qué quieres buscar?" />
+                          <button type="submit">
+                              <i class="ri-search-line"></i><span>Buscar</span>
+                          </button>
+                      </form>
+                      <div class="menu-grid dropdown">
+                          <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <img src="img/grid-menu-icon.svg" alt="">
+                          </a>
+                          <ul class="dropdown-menu">
+                              <div class="menu-grid-title">
+                                  <h3>Enlaces de interés<i class="ri-arrow-right-s-line"></i></h3>
+                                  <i class="ri-close-circle-line"></i>
+                              </div>
+                              <div class="menu-grid-content">
+                                  <a data-bs-toggle="collapse" href="#collapsePortales" role="button" aria-expanded="true" aria-controls="collapse1">
+                                      <h4>Portales</h4>
+                                      <i class="ri-arrow-down-s-line"></i>
+                                  </a>
+                                  <hr>
+                                  <div class="dropdown-items collapse show" id="collapsePortales">
+                                      <div class="row">
+                                          <div class="menu-item col text-center">
+                                              <a href="http://www.gob.do/">
+                                                  <img src="img/Gob.do.png" class="rounded-circle" alt="">
+                                                  <h5>Servicios Gob</h5>
+                                              </a>
+                                          </div>
+                                          <div class="menu-item col text-center">
+                                              <a href="http://www.911.gob.do/">
+                                                  <img src="img/Logo 911.png" class="rounded-circle" alt="">
+                                                  <h5>9 1 1</h5>
+                                              </a>
+                                          </div>
+                                          <div class="menu-item col text-center">
+                                              <a href="http://www.311.gob.do/">
+                                                  <img src="img/Logo 311.png" class="rounded-circle" alt="">
+                                                  <h5>3-1-1</h5>
+                                              </a>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="menu-item col text-center">
+                                              <a href="http://www.becas.gob.do/">
+                                                  <img src="img/Logo BECAS.png" class="rounded-circle" alt="">
+                                                  <h5>Becas tu Futuro</h5>
+                                              </a>
+                                          </div>
+                                          <div class="menu-item col text-center">
+                                              <a href="http://www.observatorioserviciospublicos.gob.do/">
+                                                  <img src="img/Logo observatorio.png" class="rounded-circle" alt="">
+                                                  <h5>Observatorio MAP</h5>
+                                              </a>
+                                          </div>
+                                          <div class="menu-item col text-center">
+                                              <a href="http://www.dominicana.gob.do/">
+                                                  <img src="img/Dominicana GOB.png" class="rounded-circle" alt="">
+                                                  <h5>Dominicana GOB</h5>
+                                              </a>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="menu-item col text-center">
+                                              <a href="http://www.divulgacionresponsable.cncs.gob.do/">
+                                                  <img src="img/CNCS.png" class="rounded-circle" alt="">
+                                                  <h5>CNCS</h5>
+                                              </a>
+                                          </div>
+                                          <div class="menu-item col text-center">
+                                              <a href="http://www.report.iwf.org.uk/do/">
+                                                  <img src="img/IWF.png" class="rounded-circle" alt="">
+                                                  <h5>Abuso Sexual Infantil en Línea</h5>
+                                              </a>
+                                          </div>
+                                          <div class="menu-item col text-center">
+                                              <a href="#">
+                                                  <img src="img/Insitutcion_Gob.png" class="rounded-circle" alt="">
+                                                  <h5>E-Tiket</h5>
+                                              </a>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="menu-item col-4 text-center">
+                                              <a href="#">
+                                                  <img src="img/Insitutcion_Gob.png" class="rounded-circle" alt="">
+                                                  <h5>Mejora Regulatorio</h5>
+                                              </a>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <a data-bs-toggle="collapse" href="#collapseInstituciones" role="button" aria-expanded="true" aria-controls="collapse1">
+                                      <h4>Instituciones</h4>
+                                      <i class="ri-arrow-down-s-line"></i>
+                                  </a>
+                                  <hr>
+                                  <div class="dropdown-items collapse show" id="collapseInstituciones">
+                                      <div class="row">
+                                          <div class="menu-item col text-center">
+                                              <a href="#">
+                                                  <img src="img/Insitutcion_Gob.png" class="rounded-circle" alt="">
+                                                  <h5>MIMPRE</h5>
+                                              </a>
+                                          </div>
+                                          <div class="menu-item col text-center">
+                                              <a href="#"></a>
+                                                  <img src="img/Insitutcion_Gob.png" class="rounded-circle" alt="">
+                                                  <h5>MAP</h5>
+                                              </a>
+                                          </div>
+                                          <div class="menu-item col text-center">
+                                              <a href="#">
+                                                  <img src="img/Logo OGTIC.png" class="rounded-circle" alt="">
+                                                  <h5>OGTIC</h5>
+                                              </a>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <a data-bs-toggle="collapse" href="#collapseVentanilla" role="button" aria-expanded="true" aria-controls="collapse1">
+                                      <h4>Ventanillas Unicas</h4>
+                                      <i class="ri-arrow-down-s-line"></i>
+                                  </a>
+                                  <hr>
+                                  <div class="dropdown-items collapse show" id="collapseVentanilla">
+                                      <div class="row">
+                                          <div class="menu-item col text-center">
+                                              <a href="#">
+                                                  <img src="img/Insitutcion_Gob.png" class="rounded-circle" alt="">
+                                                  <h5>Construcción</h5>
+                                              </a>
+                                          </div>
+                                          <div class="menu-item col text-center">
+                                              <a href="#">
+                                                  <img src="img/Insitutcion_Gob.png" class="rounded-circle" alt="">
+                                                  <h5>Inversión</h5>
+                                              </a>
+                                          </div>
+                                          <div class="menu-item col text-center">
+                                              <a href="#">
+                                                  <img src="img/Insitutcion_Gob.png" class="rounded-circle" alt="">
+                                                  <h5>Educación</h5>
+                                              </a>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </ul>
+                      </div>
+                      <div class="lang-select dropdown-simple">
+                          <a href="#">
+                              <img src="https://flagcdn.com/do.svg" alt="" />
+                              <i class="ri-arrow-down-s-line"></i>
+                          </a>
+                          <div class="dropdown-list" style="display: none;">
+                              <a href="#">
+                                  <img src="https://flagcdn.com/do.svg" alt="" /><span>ES</span>
+                              </a>
+                              <a href="#">
+                                  <img src="https://flagcdn.com/us.svg" alt="" /><span>EN</span>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="hamburger-menu">
+                          <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <img src="img/menu hamburguesa.svg" alt="">
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="main-menu">
+          <div class="container">
+              <div class="main-menu-cont">
+                  <div class="menu">
+                      <a href="#" class="menu-item">Inicio</a>
+                      <a href="#" class="menu-item">Nosotros</a>
+                      <div class="dropdown menu-dropdown">
+                        <a class="dropdown-toggle menu-item d-flex" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Servicios <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Servicio 1</a>
+                          <a class="dropdown-item" href="#">Servicio 2</a>
+                          <a class="dropdown-item" href="#">Servicio 3</a>
+                        </div>
+                    </div>
+                      <a href="#" class="menu-item">Contacto</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </header>
+    <br />
+    <br />
+    <h1>Header Dark</h1>
+    <br />
+    <br />
+    <header class="header-light dark">
+      <div class="topbar">
+          <div class="container">
+              <div class="topbar-cont">
+                  <a href="./index.html" class="logo">
+                      <div class="logo-icon">
+                          <img src="./img/logo-presidencia-white.svg" alt="" />
+                      </div>
+                  </a>
+                  <div class="topbar-right">
+                      <form class="search-bar">
+                          <label class="search-bar-toggle" for="searchMain"><i class="ri-search-line"></i></label>
+                          <input id="searchMain" type="search" placeholder="¿Qué quieres buscar?" />
+                          <button type="submit">
+                              <i class="ri-search-line"></i><span>Buscar</span>
+                          </button>
+                      </form>
+                      <div class="menu-grid dropdown">
+                          <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <img src="./img/grid-menu-white-icon.svg" alt="">
+                          </a>
+                          <ul class="dropdown-menu">
+                              <div class="menu-grid-title">
+                                  <h3>Enlaces de interés<i class="ri-arrow-right-s-line"></i></h3>
+                                  <i class="ri-close-circle-line"></i>
+                              </div>
+                              <div class="menu-grid-content">
+                                  <a data-bs-toggle="collapse" href="#collapsePortales" role="button" aria-expanded="true" aria-controls="collapse1">
+                                      <h4>Portales</h4>
+                                      <i class="ri-arrow-down-s-line"></i>
+                                  </a>
+                                  <hr>
+                                  <div class="dropdown-items collapse show" id="collapsePortales">
+                                      <div class="row">
+                                          <div class="menu-item col text-center">
+                                              <a href="http://www.gob.do/">
+                                                  <img src="img/Gob.do.png" class="rounded-circle" alt="">
+                                                  <h5>Servicios Gob</h5>
+                                              </a>
+                                          </div>
+                                          <div class="menu-item col text-center">
+                                              <a href="http://www.911.gob.do/">
+                                                  <img src="img/Logo 911.png" class="rounded-circle" alt="">
+                                                  <h5>9 1 1</h5>
+                                              </a>
+                                          </div>
+                                          <div class="menu-item col text-center">
+                                              <a href="http://www.311.gob.do/">
+                                                  <img src="img/Logo 311.png" class="rounded-circle" alt="">
+                                                  <h5>3-1-1</h5>
+                                              </a>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="menu-item col text-center">
+                                              <a href="http://www.becas.gob.do/">
+                                                  <img src="img/Logo BECAS.png" class="rounded-circle" alt="">
+                                                  <h5>Becas tu Futuro</h5>
+                                              </a>
+                                          </div>
+                                          <div class="menu-item col text-center">
+                                              <a href="http://www.observatorioserviciospublicos.gob.do/">
+                                                  <img src="img/Logo observatorio.png" class="rounded-circle" alt="">
+                                                  <h5>Observatorio MAP</h5>
+                                              </a>
+                                          </div>
+                                          <div class="menu-item col text-center">
+                                              <a href="http://www.dominicana.gob.do/">
+                                                  <img src="img/Dominicana GOB.png" class="rounded-circle" alt="">
+                                                  <h5>Dominicana GOB</h5>
+                                              </a>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="menu-item col text-center">
+                                              <a href="http://www.divulgacionresponsable.cncs.gob.do/">
+                                                  <img src="img/CNCS.png" class="rounded-circle" alt="">
+                                                  <h5>CNCS</h5>
+                                              </a>
+                                          </div>
+                                          <div class="menu-item col text-center">
+                                              <a href="http://www.report.iwf.org.uk/do/">
+                                                  <img src="img/IWF.png" class="rounded-circle" alt="">
+                                                  <h5>Abuso Sexual Infantil en Línea</h5>
+                                              </a>
+                                          </div>
+                                          <div class="menu-item col text-center">
+                                              <a href="#">
+                                                  <img src="img/Insitutcion_Gob.png" class="rounded-circle" alt="">
+                                                  <h5>E-Tiket</h5>
+                                              </a>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="menu-item col-4 text-center">
+                                              <a href="#">
+                                                  <img src="img/Insitutcion_Gob.png" class="rounded-circle" alt="">
+                                                  <h5>Mejora Regulatorio</h5>
+                                              </a>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <a data-bs-toggle="collapse" href="#collapseInstituciones" role="button" aria-expanded="true" aria-controls="collapse1">
+                                      <h4>Instituciones</h4>
+                                      <i class="ri-arrow-down-s-line"></i>
+                                  </a>
+                                  <hr>
+                                  <div class="dropdown-items collapse show" id="collapseInstituciones">
+                                      <div class="row">
+                                          <div class="menu-item col text-center">
+                                              <a href="#">
+                                                  <img src="img/Insitutcion_Gob.png" class="rounded-circle" alt="">
+                                                  <h5>MIMPRE</h5>
+                                              </a>
+                                          </div>
+                                          <div class="menu-item col text-center">
+                                              <a href="#"></a>
+                                                  <img src="img/Insitutcion_Gob.png" class="rounded-circle" alt="">
+                                                  <h5>MAP</h5>
+                                              </a>
+                                          </div>
+                                          <div class="menu-item col text-center">
+                                              <a href="#">
+                                                  <img src="img/Logo OGTIC.png" class="rounded-circle" alt="">
+                                                  <h5>OGTIC</h5>
+                                              </a>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <a data-bs-toggle="collapse" href="#collapseVentanilla" role="button" aria-expanded="true" aria-controls="collapse1">
+                                      <h4>Ventanillas Unicas</h4>
+                                      <i class="ri-arrow-down-s-line"></i>
+                                  </a>
+                                  <hr>
+                                  <div class="dropdown-items collapse show" id="collapseVentanilla">
+                                      <div class="row">
+                                          <div class="menu-item col text-center">
+                                              <a href="#">
+                                                  <img src="img/Insitutcion_Gob.png" class="rounded-circle" alt="">
+                                                  <h5>Construcción</h5>
+                                              </a>
+                                          </div>
+                                          <div class="menu-item col text-center">
+                                              <a href="#">
+                                                  <img src="img/Insitutcion_Gob.png" class="rounded-circle" alt="">
+                                                  <h5>Inversión</h5>
+                                              </a>
+                                          </div>
+                                          <div class="menu-item col text-center">
+                                              <a href="#">
+                                                  <img src="img/Insitutcion_Gob.png" class="rounded-circle" alt="">
+                                                  <h5>Educación</h5>
+                                              </a>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </ul>
+                      </div>
+                      <div class="lang-select dropdown-simple">
+                          <a href="#">
+                              <img src="https://flagcdn.com/do.svg" alt="" />
+                              <i class="ri-arrow-down-s-line"></i>
+                          </a>
+                          <div class="dropdown-list" style="display: none;">
+                              <a href="#">
+                                  <img src="https://flagcdn.com/do.svg" alt="" /><span>ES</span>
+                              </a>
+                              <a href="#">
+                                  <img src="https://flagcdn.com/us.svg" alt="" /><span>EN</span>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="hamburger-menu">
+                          <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <img src="img/menu hamburguesa.svg" alt="">
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="main-menu">
+          <div class="container">
+              <div class="main-menu-cont">
+                  <div class="menu">
+                      <a href="#" class="menu-item">Inicio</a>
+                      <a href="#" class="menu-item">Nosotros</a>
+                      <div class="dropdown menu-dropdown">
+                        <a class="dropdown-toggle menu-item d-flex" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Servicios <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Servicio 1</a>
+                          <a class="dropdown-item" href="#">Servicio 2</a>
+                          <a class="dropdown-item" href="#">Servicio 3</a>
+                        </div>
+                    </div>
+                      <a href="#" class="menu-item">Contacto</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </header>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>
 </html>
